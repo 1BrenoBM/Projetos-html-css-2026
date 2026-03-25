@@ -1,0 +1,57 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(128, 127, 127);
+    height: 100vh; /* altura da tela inteira */
+    display: flex; /* ativa o modo flex */
+    justify-content: center; /* centraliza na horizontal */
+    align-items: center; /* centraliza na vertical */
+}
+#Layer_1
+{
+    width: 400px;
+    margin: 10%auto;
+    display: block; 
+}
+.face,.man
+{
+   fill-opacity: 0;
+   stroke: #fff;
+   stroke-width: 3px;
+   stroke-dashoffset: 0;
+   stroke-dasharray: 1500;
+}
+.man
+{
+    animation: man 6s ease-in-out;
+}
+@keyframes man
+{
+    0%
+    {
+        stroke-dashoffset: 1500;
+    }
+     100%
+    {
+        stroke-dashoffset: 0;
+    }
+}
+
+.face
+{
+    animation: face 6s ease-in-out;
+}
+@keyframes face
+{
+    0%
+    {
+        stroke-dashoffset: 1500;
+    }
+     90%
+    {
+        stroke-dashoffset: 0;
+    }
+}

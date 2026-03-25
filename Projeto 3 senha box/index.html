@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <Script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yov6HppcZGetbYMGWSFlBw8HfCo="
+    crossorigin="anonymous"></Script>
+    <script src="jquery.passwordstrength.js"></script>
+    <title>Senha-PROFILE</title>
+</head>
+<body>
+
+   <form>
+     <img src="/img/profile2.png">
+    <div>
+    <div class="input-box">
+        <span><i class="fa fa-user-o"></i></span>
+        <input type="text" placeholder="Nome de Usuario" required>
+    </div>
+    
+    <div class="input-box">
+        <span><i class="fa fa-envelope-o"></i></span>
+        <input type="email" placeholder="Email" required>
+    </div>
+
+    <div class="input-box">
+        <span><i class="fa fa-key"></i></span>
+        <input type="password" placeholder="Senha" required>
+        <div>
+    </div>
+        <button type="submit"> <i class="fa fa-sign-in"></i>Registrar</button>
+   </form> 
+
+   <script type="text/javascript">
+   $(function() {
+    $("#password").passwordStrength();
+   });
+
+   </script>
+</body>
+</html>
